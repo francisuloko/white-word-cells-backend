@@ -1,5 +1,5 @@
 class CellsController < ApplicationController
-  before_action :set_cell, only: [:show, :update, :destroy]
+  before_action :set_cell, only: %i[show update destroy]
 
   # GET /cells
   def index
