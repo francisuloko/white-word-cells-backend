@@ -3,8 +3,8 @@ class CellsController < ApplicationController
 
   # GET /cells
   def index
-    @cells = Cell.all
-
+    @cells = @current_user.cells
+    
     render json: @cells
   end
 
