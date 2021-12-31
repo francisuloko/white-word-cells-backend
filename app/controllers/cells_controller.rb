@@ -4,7 +4,6 @@ class CellsController < ApplicationController
   # GET /cells
   def index
     @cells = @current_user.cells
-    
     render json: @cells
   end
 
@@ -15,7 +14,7 @@ class CellsController < ApplicationController
 
   # POST /cells
   def create
-    @cell = Cell.new(cell_params)
+    @cell = @current_user.cells.build(cell_params)
 
     if @cell.save
       render json: @cell, status: :created, location: @cell
@@ -42,7 +41,7 @@ class CellsController < ApplicationController
 
   # Use callbacks to share common setup or constraints between actions.
   def set_cell
-    @cell = Cell.find(params[:id])
+    @cell = @current_user.cells.find_by_id(params[:id])
   end
 
   # Only allow a list of trusted parameters through.
