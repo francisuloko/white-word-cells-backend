@@ -46,6 +46,6 @@ class CellsController < ApplicationController
 
   # Only allow a list of trusted parameters through.
   def cell_params
-    params.require(:cell).permit(:title, :description, :user_id)
+    params.permit(:title, :description)
   end
 end
