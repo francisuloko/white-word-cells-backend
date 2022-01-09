@@ -17,7 +17,7 @@ class Api::V1::CellsController < ApplicationController
     @cell = @current_user.cells.build(cell_params)
 
     if @cell.save
-      render json: @cell, status: :created, location: @cell
+      render json: @cell, status: :created
     else
       render json: @cell.errors, status: :unprocessable_entity
     end
