@@ -1,24 +1,4 @@
-# README
+# White Word Cells Backend API
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+> White Word Cells is a word store app that let's users store words.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
