@@ -1,24 +1,102 @@
-# README
+# White Word Cells Backend API
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+> White Word Cells is a word store app that let's users store words.
 
-Things you may want to cover:
+Project Description:
+In this project, I have:
+Set up Postgres database.
+Created an API endpoint:
 
-* Ruby version
+## REACT FRONT-END
+Check Out The Random Greeting React Front-End TBA
 
-* System dependencies
+## Built With
 
-* Configuration
+- Ruby v2.7.0
+- Ruby on Rails v5.2.4
+- Postgres
+- Rubcop
 
-* Database creation
 
-* Database initialization
+## Getting Started
 
-* How to run the test suite
+To get a local copy up and running follow these simple steps.
 
-* Services (job queues, cache servers, search engines, etc.)
+- To get a local copy of this project, run
+`git clone https://github.com/francisuloko/white-word-cells-backend.git`
 
-* Deployment instructions
+- Change into the project directory, run
+`cd white-word-cells-backend`
 
-* ...
+### Prerequisites
+
+Ruby: 2.6.3
+Rails: 5.2.3
+Postgres: >=9.5
+
+### Setup
+Install webpacker with:
+
+```
+rails webpacker:instal
+```
+
+Install gems with:
+
+```
+bundle install
+```
+
+Setup database with:
+
+```
+   rails db:create
+   rails db:migrate
+   rails db:seed
+```
+
+### Github Actions
+
+To make sure the linters' checks using Github Actions work properly, you should follow the next steps:
+
+1. On your recently forked repo, enable the GitHub Actions in the Actions tab.
+2. Create the `feature/branch` and push.
+3. Start working on your milestone as usual.
+4. Open a PR from the `feature/branch` when your work is done.
+
+
+### Usage
+
+Start server with:
+
+```
+    rails server
+```
+
+Open `http://localhost:3001/` in your browser.
+
+## Authors
+
+👤 **Francis Uloko**
+
+- [Github](https://github.com/francisuloko)
+- [Twitter](https://twitter.com/francisuloko)
+- [LinkedIn](https://linkedin.com/in/francisuloko)
+
+## 🤝 Contributing
+
+Contributions, issues and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/francisuloko/white-word-cells-backend/issues).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- The Microverse ror-social-scaffold Team
+
+## 📝 License
+
+This project is [MIT](https://mit-license.org) licensed.
