@@ -1,21 +1,18 @@
 # White Word Cells Backend API
 
-> White Word Cells is a word store app that let's users store words.
+> White Word Cells is a word store app that lets users save words with custom description.
 
-Project Description:
-In this project, I have:
-Set up Postgres database.
-Created an API endpoint:
+The aim is for users to store personalized affirmations or motivational quotes to help them stay positive when they feel low. It is modelled after the white blood cells which form part of the body's immune system to help fight infections and other diseases. 
 
 ## REACT FRONT-END
 Check Out The Random Greeting React Front-End TBA
 
 ## Built With
 
-- Ruby v2.7.0
+- Ruby v2.7.0+
 - Ruby on Rails v5.2.4
 - Postgres
-- Rubcop
+- Rubocop
 
 
 ## Getting Started
