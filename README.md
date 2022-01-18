@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # White Word Cells Backend API
 
 > White Word Cells is a word store app that lets users save words with custom description.
@@ -25,6 +26,40 @@ To get a local copy up and running follow these simple steps.
 - Change into the project directory, run
 `cd white-word-cells-backend`
 
+=======
+# Hello-Rails-Back-End
+
+> How to setup a Ruby on Rails API-only back-end
+
+Project Description:
+In this project, I have:
+Set up Postgres database.
+Created an API endpoint that selects a random greeting from greetings table via v1/greetings.
+
+Note: Random greeting is Display on refresh
+
+## REACT FRONT-END
+Check Out The Random Greeting React Front-End [Here](https://deploy-preview-1--elated-poitras-b362bb.netlify.app/)
+
+## Built With
+
+- Ruby v2.7.0
+- Ruby on Rails v5.2.4
+- Postgres
+- Rubcop
+
+
+## Getting Started
+
+To get a local copy up and running follow these simple steps.
+
+- To get a local copy of this project, run
+`git clone https://github.com/francisuloko/hello-rails-back-end.git`
+
+- Change into the project directory, run
+`cd hello-rails-back-end`
+
+>>>>>>> 3d955e1721f965c1a7937c3ee755f357caec0f74
 ### Prerequisites
 
 Ruby: 2.6.3
@@ -70,7 +105,20 @@ Start server with:
     rails server
 ```
 
+<<<<<<< HEAD
 Open `http://localhost:3001/` in your browser.
+=======
+Open `http://localhost:3000/` in your browser.
+
+### API ENDPOINT
+
+- Get random greeting:
+```
+
+  https://fierce-citadel-70579.herokuapp.com/greetings
+
+```
+>>>>>>> 3d955e1721f965c1a7937c3ee755f357caec0f74
 
 ## Authors
 
@@ -84,7 +132,11 @@ Open `http://localhost:3001/` in your browser.
 
 Contributions, issues and feature requests are welcome!
 
+<<<<<<< HEAD
 Feel free to check the [issues page](https://github.com/francisuloko/white-word-cells-backend/issues).
+=======
+Feel free to check the [issues page](https://github.com/francisuloko/hello-rails-react/issues).
+>>>>>>> 3d955e1721f965c1a7937c3ee755f357caec0f74
 
 ## Show your support
 
