@@ -39,6 +39,6 @@ class Api::V1::CellsController < ApplicationController
   end
 
   def cell_params
-    params.permit(:title, :description)
+    params.permit(:id, :title, :description)
   end
 end
