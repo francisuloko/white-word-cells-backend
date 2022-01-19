@@ -1,4 +1,4 @@
 class Cell < ApplicationRecord
   belongs_to :user
-  before_save { self.title.downcase! }
+  before_save { title.downcase! }
 end
