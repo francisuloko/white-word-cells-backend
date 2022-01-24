@@ -2,7 +2,7 @@ class Api::V1::CellsController < ApplicationController
   before_action :set_cell, only: %i[show update destroy]
 
   def index
-    @cells = @current_user.cells
+    @cells = current_user.cells
     render json: @cells
   end
 
@@ -11,7 +11,7 @@ class Api::V1::CellsController < ApplicationController
   end
 
   def create
-    @cell = @current_user.cells.build(cell_params)
+    @cell = current_user.cells.build(cell_params)
 
     if @cell.save
       render json: @cell, status: :created
@@ -35,10 +35,10 @@ class Api::V1::CellsController < ApplicationController
   private
 
   def set_cell
-    @cell = @current_user.cells.find_by_id(params[:id])
+    @cell = current_user.cells.find_by_id(params[:id])
   end
 
   def cell_params
-    params.permit(:title, :description)
+    params.permit(:id, :title, :description)
   end
 end

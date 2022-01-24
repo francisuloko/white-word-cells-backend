@@ -1,11 +1,26 @@
 class ApplicationController < ActionController::API
-  before_action :authenticate_request
-  attr_reader :current_user
+  include ActionController::Cookies
+  include ActionController::RequestForgeryProtection
+  include Response
+  include ExceptionHandler
+
+  protect_from_forgery with: :exception
+  skip_before_action :verify_authenticity_token
+  before_action :logged_in_user
 
   private
 
-  def authenticate_request
-    @current_user = AuthorizeApiRequest.call(request.headers).result
-    render json: { error: 'Not Authorized' }, status: 401 unless @current_user
+  def current_user
+    @current_user ||= User.find_by_id(session[:user_id]) if session[:user_id]
+  end
+
+  def logged_in?
+    !current_user.nil?
+  end
+
+  def logged_in_user
+    return if logged_in?
+
+    render json: { error: 'You are not logged in. Please log in first.' }, status: 400
   end
 end
