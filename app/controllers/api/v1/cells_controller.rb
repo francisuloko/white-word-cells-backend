@@ -1,4 +1,4 @@
-class Api::V1::CellsController < ApplicationController
+Mclass Api::V1::CellsController < ApplicationController
   before_action :set_cell, only: %i[show update destroy]
 
   def index
