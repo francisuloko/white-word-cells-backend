@@ -30,7 +30,9 @@ gem 'rack-cors'
 
 gem 'rubocop', '>= 1.0', '< 2.0'
 
-gem 'active_model_serializers', '~> 0.10.0'
+gem 'rails_same_site_cookie'
+
+gem 'jsonapi-serializer'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
