@@ -5,8 +5,8 @@ default: &default
   encoding: unicode
   host: localhost
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  username: whitewordcells
-  password: qvitam789@#
+  username: <%= ENV["WWCUSERNAME"] %>
+  password: <%= ENV["WWCPASSWORD"] %>
 
 development:
   <<: *default
@@ -19,5 +19,5 @@ test:
 production:
   <<: *default
   database: white_word_cells_backend_production
-  username: white_word_cells_backend
-  password: <%= ENV['WHITE_WORD_CELLS_BACKEND_DATABASE_PASSWORD'] %>
+  username: <%= ENV["WWCUSERNAME"] %>
+  password: <%= ENV["WCCPASSWORD"] %>
