@@ -14,7 +14,7 @@ Rails.application.config.middleware.insert_before 0, Rack::Cors do
   end
 
   allow do
-    origins 'https://whitewordcells.com'
+    origins 'https://www.whitewordcells.com'
 
     resource '*',
       headers: :any,
