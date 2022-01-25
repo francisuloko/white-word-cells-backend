@@ -1,17 +1,19 @@
-<<<<<<< HEAD
-# White Word Cells Backend API
+# White Word Cells
 
-> White Word Cells is a word store app that lets users save words with custom description.
+> White Word Cells is a word store app that lets users store words with custom description.
 
-The aim is for users to store personalized affirmations or motivational quotes to help them stay positive when they feel low. It is modelled after the white blood cells which form part of the body's immune system to help fight infections and other diseases. 
+White Word Cells lets you save words with custom descriptions. You can store personal affirmations or motivations, describe your pet or reframe words with bad vibes. It is modelled after the white blood cells to help you fight negative thoughts. We are made of word, what words are you made of? 
 
-## REACT FRONT-END
-Check Out The Random Greeting React Front-End TBA
+## REACT FRONTEND
+
+Check out the White Word Cell Frontend Repo [here](https://github.com/francisuloko/white-word-cells-frontend)
+
+Or sign up at [whitewordcells.com](whitewordcells.com)
 
 ## Built With
 
-- Ruby v2.7.0+
-- Ruby on Rails v5.2.4
+- Ruby v3.0.3
+- Ruby on Rails v6.1.4.4
 - Postgres
 - Rubocop
 
@@ -21,104 +23,63 @@ Check Out The Random Greeting React Front-End TBA
 To get a local copy up and running follow these simple steps.
 
 - To get a local copy of this project, run
-`git clone https://github.com/francisuloko/white-word-cells-backend.git`
+
+  `git clone https://github.com/francisuloko/white-word-cells-backend.git`
 
 - Change into the project directory, run
-`cd white-word-cells-backend`
 
-=======
-# Hello-Rails-Back-End
+  `cd white-word-cells-backend`
 
-> How to setup a Ruby on Rails API-only back-end
-
-Project Description:
-In this project, I have:
-Set up Postgres database.
-Created an API endpoint that selects a random greeting from greetings table via v1/greetings.
-
-Note: Random greeting is Display on refresh
-
-## REACT FRONT-END
-Check Out The Random Greeting React Front-End [Here](https://deploy-preview-1--elated-poitras-b362bb.netlify.app/)
-
-## Built With
-
-- Ruby v2.7.0
-- Ruby on Rails v5.2.4
-- Postgres
-- Rubcop
-
-
-## Getting Started
-
-To get a local copy up and running follow these simple steps.
-
-- To get a local copy of this project, run
-`git clone https://github.com/francisuloko/hello-rails-back-end.git`
-
-- Change into the project directory, run
-`cd hello-rails-back-end`
-
->>>>>>> 3d955e1721f965c1a7937c3ee755f357caec0f74
-### Prerequisites
-
-Ruby: 2.6.3
-Rails: 5.2.3
-Postgres: >=9.5
 
 ### Setup
-Install webpacker with:
+
+Run the following commands to get started
 
 ```
-rails webpacker:instal
-```
 
-Install gems with:
-
-```
 bundle install
-```
-
-Setup database with:
-
-```
-   rails db:create
-   rails db:migrate
-   rails db:seed
-```
-
-### Github Actions
-
-To make sure the linters' checks using Github Actions work properly, you should follow the next steps:
-
-1. On your recently forked repo, enable the GitHub Actions in the Actions tab.
-2. Create the `feature/branch` and push.
-3. Start working on your milestone as usual.
-4. Open a PR from the `feature/branch` when your work is done.
-
-
-### Usage
-
-Start server with:
+rails db:create
+rails db:migrate
+rails server
 
 ```
-    rails server
-```
 
-<<<<<<< HEAD
-Open `http://localhost:3001/` in your browser.
-=======
-Open `http://localhost:3000/` in your browser.
 
-### API ENDPOINT
+### API Endpoints
 
-- Get random greeting:
-```
+Authentication:
 
-  https://fierce-citadel-70579.herokuapp.com/greetings
+Register a new user:
 
-```
->>>>>>> 3d955e1721f965c1a7937c3ee755f357caec0f74
+  `curl -H "withCredentials: ture" -X POST -d { "name": "user 1", "email": "example@email.com", "password": "password123" } http://localhost:3001/api/v1/users`
+
+  Login registered user (creates sessions)
+
+  `curl -H "withCredentials: true" -X POST -d { "email": "example@email.com", "password": "password123" } http://localhost:3001/api/v1/login`
+
+  Logout
+
+  `curl -H "withCredentials: true" -X DELETE http://localhost:3001/api/v1/logout`
+
+  Authorization:
+
+  Get current user words:
+
+  `curl -H "withCredentials: true" -X GET http://localhost:3001/api/v1/cells`
+
+  Create new word:
+
+  `curl -H "withCredentials: true" -X POST -d { "title": "Cannot" , "description": "There is nothing you cannot do if you try"} http://localhost:3001/api/v1/cells`
+
+  Edit word:
+
+  `curl -H "withCredentials: true" -X PUT -d { "title": "Can" , "description": "I can do all things through Christ who strengthens me"} http://localhost:3001/api/v1/cells/:id`
+
+  Delete word:
+
+  `curl -H "withCredentials: true" -X DELETE http://localhost:3001/api/v1/cells/:id`
+
+
 
 ## Authors
 
@@ -132,11 +93,7 @@ Open `http://localhost:3000/` in your browser.
 
 Contributions, issues and feature requests are welcome!
 
-<<<<<<< HEAD
 Feel free to check the [issues page](https://github.com/francisuloko/white-word-cells-backend/issues).
-=======
-Feel free to check the [issues page](https://github.com/francisuloko/hello-rails-react/issues).
->>>>>>> 3d955e1721f965c1a7937c3ee755f357caec0f74
 
 ## Show your support
 
@@ -144,7 +101,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- The Microverse ror-social-scaffold Team
+- TBA
 
 ## 📝 License
 
