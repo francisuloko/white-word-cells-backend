@@ -2,13 +2,13 @@
 
 > White Word Cells is a word store app that lets users store words with custom description.
 
-White Word Cells lets you save words with custom descriptions. You can store personal affirmations or motivations, describe your pet or reframe words with bad vibes. It is modelled after the white blood cells to help you fight negative thoughts. We are made of word, what words are you made of? 
+White Word Cells lets you save words with custom descriptions. You can store personal affirmations or motivations, describe your pet or reframe words with bad vibes. It is modelled after the white blood cells to help you fight negative thoughts.
 
 ## REACT FRONTEND
 
 Check out the White Word Cell Frontend Repo [here](https://github.com/francisuloko/white-word-cells-frontend)
 
-Or sign up at [whitewordcells.com](whitewordcells.com)
+Or sign up at [whitewordcells.com](https://whitewordcells.com)
 
 ## Built With
 
@@ -101,7 +101,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- TBA
+- [Agi Letkiewicz Tanner](https://medium.com/@altanner/react-user-authentication-with-rails-sessions-and-redux-194b5d31fe5a)
 
 ## 📝 License
 
