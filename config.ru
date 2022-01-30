@@ -8,7 +8,7 @@ Rails.application.load_server
 require 'rack/cors'
 use Rack::Cors do
   allow do
-    origins 'https://whitewordcells.com'
+    origins 'https://www.whitewordcells.com'
 
     resource '*',
              headers: :any,
